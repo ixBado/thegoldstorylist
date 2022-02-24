@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    font-family: 'Tajawal', sans-serif;
+    background: #645151;
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+h1 span {
+    color: rgb(0, 0, 0);
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+h3{
+    font-size: 3rem;
+    line-height: 1.8;
+}
+
+h4{
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+h6{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+    color: white;
+    line-height: 2;
+}
+
+/* Nav Section */
+.nav-container{
+    background: #000000;
+    color: #000000;
+}
+
+ nav{
+     width: 90%;
+     margin: 0 auto;
+    max-width: 1366px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    font-size: 1.6rem;
+    }
+
+    nav .logo{
+        font-family: 'Kufam', sans-serif;
+        font-weight: bold;
+        color: white;
+        flex: 2;
+    }
+
+    nav ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a :hover{
+        color: goldenrod;
+    }
+
+    /* Hero Section */
+
+    .hero {
+    height: 90vh;
+    position: relative;
+    }
+   
+    .hero::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-image:linear-gradient(
+            90deg,
+      rgba(180, 123, 77, 0.2) 0%,
+      rgba(102, 73, 39, 0.8) 20%
+    ),
+        url(./images/susan-q-yin-2JIvboGLeho-unsplash.jpg)
+    }
+
+    .content {
+        width: 90%;
+        max-width: 1366px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 90vh;
+      }
+
+      h1 span,
+      h2 span {
+          color: #000000;
+      }
+          
+      .btn {
+          margin-top: 2rem;
+          font-family: inherit;
+          font-size: 1.6rem;
+          font-weight: bold;
+          padding: 0.75rem 3rem;
+          border-radius: 0,5rem;
+          border: none;
+          outline: none;
+          color: gold;
+          background:rgba(177, 126, 67, 0.8)
+      }
+      
+      .btn a {
+        font-size: 1.6rem;
+        color: rgb(163, 149, 70);
+        text-decoration: none;
+      }
+
+      .btn:hover{
+          background: #645151;
+      }
+
+      .btn:active{
+          transform: scale(0.98);
+      }
+
+      
+
+      /* Qualities Section */
+
+      .qualities{
+          width: 100%;
+          margin: 4rem auto;
+          max-width: 1366px;
+          height: 100%;
+          min-height: 20vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .quality h3{
+          font-size: 3rem;
+      }
+
+      .quality-container {
+          display: flex;
+          justify-content: space-between;
+          grid-gap: 2rem;
+          padding-top: 5rem;
+      }
+
+      .quality{
+          background: #4b181888;
+          padding: 4rem 0;
+          width: 30%;
+      }
+
+
+      .quality h7{
+          color: #000000;
+          font-size: 2.2rem;
+          margin-bottom: 0;
+      }
+      
+      /*quality 2 */
+
+      .quality-container2 {
+        display: flex;
+        justify-content: space-between;
+        grid-gap: 2rem;
+        padding-top: 5rem;
+    }
+
+    .quality2{
+        background: #4b181888;
+        padding: 4rem 0;
+        width: 30%;
+    }
+
+    .quality2 h7{
+        color: #000000;
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+
+
+      /*about section*/
+
+      .about-container{
+          background: #8e340b41
+      }
+     .about us{
+         width: 100%;
+         max-width: 1366px;
+         margin: 0 auto;
+         height: 50vh;
+         display: flex;
+        justify-content: space-between;
+     }
+
+     .about-us img {
+        width: 50%;
+        height: 10%;
+      }
+
+     .about-content{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     .about-content h6{
+         color: #ff976b;
+         font-size: 3rem;
+         margin-bottom: 1rem;
+     }
+
+     .about-content p{
+         margin-top: 1rem;
+         color: #ff976b8f;
+         width: 80%;
+     }
+
+     /*contact us*/
+
+     .contact h8 {
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+        display: flex;
+        font-size: 3rem;
+     }
+
+     .contact p1 {
+         justify-content: center;
+         display: flex;
+         font-size: 2rem;
+     }
+
+     .contact i{
+         justify-content: center;
+         display: flex;
+         font-size: 2rem;
+     }
+
+     .contact p2 {
+        justify-content: center;
+        display: flex;
+        font-size: 2rem;
+     }
+
+     .contact i1{
+        justify-content: center;
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .contact p3{
+        justify-content: center;
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .contact h8 {
+        justify-content: center;
+    }
+
+     /*footer*/
+
+     footer {
+        background: #8b6e3c48;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+      }
+      
+      footer p {
+        color: #d9d9d9;
+      }
+
+      /* Responsive Design */
+
+      @media (max-width: 1400px) {
+        .hero .content {
+          align-items: center;
+          text-align: center;
+        }
+        .hero h4 {
+          width: 100%;
+        }
+      
+        .hero::after {
+          animation: none;
+        }
+      }
+      @media (max-width: 1338px) {
+        html {
+          font-size: 10px;
+        }
+      
+        nav ul {
+          flex-direction: column;
+        }
+        nav ul li {
+          margin: 0.5rem 0;
+        }
+      
+        .qualities-container {
+          flex-wrap: wrap;
+        }
+        .quality {
+          width: 100%;
+        }
+      }
+      
+      @media (max-width: 1338px) {
+        html {
+          font-size: 8px;
+        }
+      
+        .about-us img {
+          display: none;
+        }
+        .about-content {
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      
+      @media (min-width: 1338px) {
+        input,
+        textarea {
+          width: 40%;
+        }
+      }
